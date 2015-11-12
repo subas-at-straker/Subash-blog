@@ -12,7 +12,6 @@
 		<div class="page-header">
 			<h1 class="text-center neon" style="color:Red;font-size: 150px; ">Admin</h1></br>
 		</div>
-		<cfdump var="#session#">
 		<h3 class="list-group-item active">Click to edit:</h3>
 		<cfoutput query="qPosts">
 			<ul class="list-unstyled">

@@ -1,0 +1,75 @@
+<style type="text/css">.tdQueryReset { background: url(data:image/gif;base64,R0lGODlhCQAJAIABAAAAAP///yH5BAEAAAEALAAAAAAJAAkAAAIRhI+hG7bwoJINIktzjizeUwAAOw==) no-repeat; height:18px; background-position:2px 4px;}
+.metamodern {font-weight: normal}
+.tableDumpmodern {font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;font-size: 11px;background-color: #eee;color: #000;border-spacing: 1px;border-collapse:separate;}
+.baseHeadermodern {border: 1px solid #000;padding: 2px;text-align: left;vertical-align: top;cursor:pointer;margin: 1px 1px 0px 1px;}
+.headermodern {font-weight: bold; border:1px solid #000;}
+.tdClickNamemodern {empty-cells: show}
+.tdBasemodern {border: 1px solid #000;padding: 2px;vertical-align: top;}
+.tdModernStructHeader {background-color:#99f; border: 1px solid #000; color: #000} .tdModernStructName {cursor:pointer; background-color:#99f !important; border: 1px solid #000; color: #000} .tdModernStructValue {background-color:#ccf; border: 1px solid #000; color: #000} 
+.tdModernSimpleValueHeader {background-color:#f60; border: 1px solid #000; color: #000} .tdModernSimpleValueName { background-color:#f60 !important; border: 1px solid #000; color: #000} .tdModernSimpleValueValue {background-color:#fc9; border: 1px solid #000; color: #000} 
+.tdModern330d6c14v3w3Header {background-color: #fff; border: 1px solid #000; color: #000} .tdModern330d6c14v3w3Name {cursor: pointer;background-color: #fff; border: 1px solid #000; color: #000} .tdModern330d6c14v3w3Value {background-color: #ccc; border: 1px solid #000; color: #000} 
+</style><script type="text/javascript">
+var sBase = "var";
+function dump_toggle(e,t){var n=e;n=n.nextElementSibling||n.nextSibling;while(n&&n.nodeType===1&&n!==e){var r=n;s=r.style;if(s.display=="none"){s.display=""}else{s.display="none"}n=n.nextElementSibling||n.nextSibling}if(e.style.fontStyle=="italic"){e.style.fontStyle="normal"}else{e.style.fontStyle="italic"}if(t){var i=e;var o="";var u="";while(i){o=i.innerHTML;if(isNumber(o)){o="["+o+"]"}if(u==""){u=o}else{u=o+(u.substring(0,1)=="["?"":".")+u}i=getNextLevelUp(i)}r.innerHTML=sBase+(u.substring(0,1)=="["?"":".")+u;selectText(r)}}function isNumber(e){return!isNaN(parseFloat(e))&&isFinite(e)}function getNextLevelUp(e){oCurrent=e;while(e){e=e.parentNode;if(e&&e.className&&e.className.toUpperCase()=="TRTABLEDUMP"){if(!e.firstElementChild){var t=e.children[0]}else{var t=e.firstElementChild}if(t){if(t!==oCurrent&&t.className.toUpperCase().indexOf("NAME TDCLICK")!=-1){return t}}e=e.parentNode}}return}function selectText(e){if(document.body.createTextRange){var t=document.body.createTextRange();t.moveToElementText(e);t.select()}else if(window.getSelection){var n=window.getSelection();var t=document.createRange();t.selectNodeContents(e);n.removeAllRanges();n.addRange(t)}}function dump_hideColumn(e,t){var n=e.parentNode;while(n&&n.nodeType===1){var r=n.children;if(r[t]&&r[t].tagName=="TD"){r[t].style.display="none"}n=n.nextElementSibling||n.nextSibling}}function dump_resetColumns(e,t){var n=e.parentNode;while(n&&n.nodeType===1){var r=n.children;for(var i=0;i<r.length-1;i++){if(i==r.length-1){r[i].style.display="none"}else{r[i].style.display=""}}n=n.nextElementSibling||n.nextSibling}}</script>
+<table class="tableDumpmodern" title="/mnt/data/jboss/server/web/deploy/web10.war/subash_test/Application.cfc:43">
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModern330d6c14v3w3Name tdClickNameModern330d6c14v3w3">NEW Session</td>
+<td class="tdBasemodern tdModern330d6c14v3w3Name tdClickNameModern330d6c14v3w3" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModern330d6c14v3w3Value tdClickValueModern330d6c14v3w3">
+<table class="tableDumpmodern" >
+<tr class="baseHeadermodern tdModernStructHeader clickHeader"  onClick="dump_toggle(this, false)">
+<td class="headermodern" colspan="3"><span style="white-space: nowrap">Session Scope (Memory)</span>
+<span class="metamodern"><span style="white-space: nowrap"></span></span></td>
+</tr>
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernStructName tdClickNameModernStruct" onClick="dump_toggle(this, true)">cfid</td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct">
+<table class="tableDumpmodern" >
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue">string</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue">2b5453b5-df83-4344-9729-a691aa11e2c8</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernStructName tdClickNameModernStruct" onClick="dump_toggle(this, true)">cftoken</td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct">
+<table class="tableDumpmodern" >
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue">string</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue">0</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernStructName tdClickNameModernStruct" onClick="dump_toggle(this, true)">lastvisit</td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct">
+<table class="tableDumpmodern" >
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue">Date Time (UTC)</td>
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue">{ts '2015-11-12 19:41:29'}</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernStructName tdClickNameModernStruct" onClick="dump_toggle(this, true)">sessionid</td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct">
+<table class="tableDumpmodern" >
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue">string</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue">Subash Test_2b5453b5-df83-4344-9729-a691aa11e2c8_0</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernStructName tdClickNameModernStruct" onClick="dump_toggle(this, true)">timecreated</td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct">
+<table class="tableDumpmodern" >
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue">Date Time (UTC)</td>
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue">{ts '2015-11-12 19:41:29'}</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct" style="display:none">susi</td></tr><tr class="trTableDump" >
+<td class="tdBasemodern tdModernStructName tdClickNameModernStruct" onClick="dump_toggle(this, true)">urltoken</td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct">
+<table class="tableDumpmodern" >
+<tr class="trTableDump" >
+<td class="tdBasemodern tdModernSimpleValueName tdClickNameModernSimpleValue">string</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue">CFID=2b5453b5-df83-4344-9729-a691aa11e2c8&amp;CFTOKEN=0</td>
+<td class="tdBasemodern tdModernSimpleValueValue tdClickValueModernSimpleValue" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModernStructValue tdClickValueModernStruct" style="display:none">susi</td></tr></table></td>
+<td class="tdBasemodern tdModern330d6c14v3w3Value tdClickValueModern330d6c14v3w3" style="display:none">susi</td></tr></table>

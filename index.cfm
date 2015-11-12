@@ -1,4 +1,4 @@
-<cfinclude template="style.cfm">
+<cfinclude template="includes/login_helpers.cfm">
 <cfset oBlog 	= createObject("subash_test.cfcs.blog").init()>
 <cfset qPosts	= oBlog.getPosts()>
 
@@ -9,7 +9,7 @@
 <body>
 	<div class="container-fluid">
 		<div id="wrap">
-		<a href="admin.cfm"><h4><button type="button" class="btn btn-danger" style="float: left;">Admin</button></h4></a>
+		<a href="logout.cfm"><h4><button type="button" class="btn btn-danger" style="float: right;">Logout</button></h4></a>
 		<div class="page-header">
 			<h1 class="text-center neon" style="font-size: 150px; color:Orange;"><strong>B</strong><sup>log</sup><small style="font-size:20px;">Express Yourself</small> </h1>
 			</br>
@@ -27,5 +27,7 @@
 		</cfoutput>
 		</div>
 	</div>
+	<cfoutput>
+</cfoutput>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<cfinclude template="style.cfm">
+<cfinclude template="includes/login_helpers.cfm">
 <cfset oBlog = createObject("subash_test.cfcs.blog").init()>
 <cfset qPost = oBlog.getPost(id=url.id)>
 
@@ -12,7 +12,7 @@
 		<div class="page-header">
 			<h1 class="text-center neon" style="font-size: 150px;">Content</h1></br>
 		</div>
-		<div  style="background-color: #99CCFF;padding:10px;">
+		<div  style="background-color: ##99CCFF;padding:10px;">
 			<cfoutput>#qPost.post_content#</cfoutput>
 		</div>
 		<a href="index.cfm"><br/>Go Back</a>

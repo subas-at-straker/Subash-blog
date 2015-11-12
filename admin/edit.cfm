@@ -1,4 +1,4 @@
-<cfinclude template="style.cfm">
+<cfinclude template="../includes/login_helpers.cfm">
 <cfparam name="sMessage" default="">
 <cfset oBlog = createObject("subash_test.cfcs.blog").init()>
 
@@ -37,14 +37,3 @@
 </body>
 </html>
 </cfoutput>
-
-<!--- request.attributes does not work --->
-<!--- <cfif structKeyExists(request.attributes, "save")>
-	<cfset oBlog.editPost(id=url.id, content=url.content)>
-	<cfset sMessage = "Post update">
-</cfif> --->
-<!--- Form doesnt work --->
-<!--- <cfif isdefined("form.save")>
-	<cfset editPost(id=form.id, content=form.content)>
-	<cfset sMessage = "Post update">
-</cfif> --->

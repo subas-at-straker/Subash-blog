@@ -60,5 +60,43 @@
 	</cffunction>
 
 	<!--- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: --->
+	<cffunction name="logout" hint="I logout!">
+		<cfloop collection=#session# item="i">
+
+			<cfset StructDelete(session,i)>
+
+		</cfloop>
+	</cffunction>
+
+	<!--- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: --->
+	<cffunction name="login" hint="I check login!">
+		<cfargument name="username" type="string" required="true" hint="I am username" displayname="username" />
+		<cfargument name="password" type="string" required="true"hint="I am password" displayname="password" />
+		<cfargument name="action" type="string" required="true" hint="I am form action" displayname="action" />
+		<cfargument name="dsn" type="string" required="false" default="subash_blog" hint="I am the dsn" displayname="dsn" />
+
+			<cfset var qlogin = "">
+			<cfif arguments.action EQ "login">
+				<cfquery datasource="#arguments.dsn#" name="qLogin">
+					SELECT id, username, password, role
+					FROM users
+					WHERE username = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.username#"> AND password = <cfqueryparam cfsqltype="cf_sql_varchar" value="#arguments.password#">;
+				</cfquery>
+
+				<cfif qLogin.RecordCount Greater THAN 0>
+					<cfset session.uid = qLogin.id>
+					<cfif qLogin.role EQ "admin">
+						<cflocation url="admin/admin.cfm" addtoken="false">
+					<cfelse>
+						<cflocation url="index.cfm" addtoken="false">
+					</cfif>
+				<cfelse>
+					<cflocation url="login.cfm?error=Authorization Failed!" addtoken="false">
+				</cfif>
+			<cfelse>
+					<cflocation url="login.cfm?error=Oops something went wrong. Try Again!" addtoken="false">
+			</cfif>
+	</cffunction>
+	<!--- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: --->
 
 	</cfcomponent>

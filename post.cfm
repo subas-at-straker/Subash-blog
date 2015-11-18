@@ -1,5 +1,5 @@
 <cfinclude template="includes/login_helpers.cfm">
-<cfset oBlog = createObject("subash_test.cfcs.blog").init()>
+<cfset oBlog = createObject("subash_blog.cfcs.blog").init()>
 <cfset qPost = oBlog.getPost(id=url.id)>
 
 <html>

@@ -1,4 +1,4 @@
-<cfset oBlog 	= createObject("subash_test.cfcs.blog").init()>
+<cfset oBlog 	= createObject("subash_blog.cfcs.blog").init()>
 <cfoutput>#oBlog.logout()#</cfoutput>
 <html>
 <head>

@@ -1,6 +1,6 @@
 <cfinclude template="../includes/login_helpers.cfm">
 <cfparam name="sMessage" default="">
-<cfset oBlog = createObject("subash_test.cfcs.blog").init()>
+<cfset oBlog = createObject("subash_blog.cfcs.blog").init()>
 
 <cfif isdefined("url.save")>
 	<cfset oBlog.editPost(id=url.id, content=url.content)>
